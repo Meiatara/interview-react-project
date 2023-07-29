@@ -7,9 +7,9 @@ import img1 from '../assets/person-planning-a-startup-business 1.svg';
 import img3 from '../assets/Vector 391.svg';
 
 const Dashboard = () => {
-    const navigate = useNavigate();
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [email, setEmail] = useState('');
+  const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     const storedToken = localStorage.getItem('token');
@@ -26,7 +26,6 @@ const Dashboard = () => {
     alert('Logout success');
     navigate('/');
   };
-
   
     return (
       <>
@@ -39,16 +38,16 @@ const Dashboard = () => {
                 <img src={img2} />
             </div>
             <img src={img3} className='bg-dsn-btm' />
-        <div className="container">
-        <div className="form-container">
-          <h1 className="form-header">Dashboard</h1>
-          <h4>Selamat datang {email}</h4>
-          <h4>Daftar Makanan :</h4>
-          <RetrieveFoods />
-          <button className="btn btn-primary" onClick={handleLogout}>Keluar</button>
+          <div className="container">
+            <div className="form-container">
+              <h1 className="form-header">Dashboard</h1>
+              <h4>Selamat datang {email}</h4>
+              <h4>Daftar Makanan :</h4>
+              <RetrieveFoods />
+              <button className="btn btn-primary" onClick={handleLogout}>Keluar</button>
+            </div>
+          </div>
         </div>
-      </div>
-      </div>
       </>
     );
   };

@@ -47,25 +47,25 @@ const Login = () => {
     return (
       <>
         <div className="bg-container">
-            <div className="bg-logo">
-                <img src={img} className='logo'/>
-            </div>
-            <div className="bg-dsn-upp">
-                <img src={img1} />
-                <img src={img2} />
-            </div>
-            <img src={img3} className='bg-dsn-btm' />
-        <div className="container">
-          <div className="form-container">
-            <h1 className="form-header">Masuk</h1>
-            <h4>Masukkan alamat email kata sandi yang telah anda daftarkan.</h4>
-            <form onSubmit={handleSubmit}>
-                <input className="input-field" type="email" placeholder="user@user.com" onChange={handleEmailChange} required/>
-                <input className="input-field" type="password" placeholder="********" onChange={handlePasswordChange} required/>
-              <button className="btn btn-primary">Masuk Sekarang</button>
-            </form>
+          <div className="bg-logo">
+              <img src={img} className='logo'/>
           </div>
-        </div>
+          <div className="bg-dsn-upp">
+              <img src={img1} />
+              <img src={img2} />
+          </div>
+          <img src={img3} className='bg-dsn-btm' />
+          <div className="container">
+            <div className="form-container">
+              <h1 className="form-header">Masuk</h1>
+              <h4>Masukkan alamat email kata sandi yang telah anda daftarkan.</h4>
+              <form onSubmit={handleSubmit}>
+                  <input className="input-field" type="email" placeholder="user@user.com" onChange={handleEmailChange} required/>
+                  <input className="input-field" type="password" placeholder="********" onChange={handlePasswordChange} required/>
+                <button className="btn btn-primary">Masuk Sekarang</button>
+              </form>
+            </div>
+          </div>
         </div>
       </>
     );
